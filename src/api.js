@@ -3,9 +3,10 @@ const API_KEY = '39460878-dc736cfcb50ba2857b324878d';
 const API_URL = 'https://pixabay.com/api/';
 
 export async function searchImages(userInput, currentPage) {
-  const urlEncodedUserInput = userInput.split(' ').join('+');
+  const urlUserInput = userInput.split(' ').join('+');
   let searchParams = new URLSearchParams({
-    q: urlEncodedUserInput,
+    key: API_KEY,
+    q: urlUserInput,
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
