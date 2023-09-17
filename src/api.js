@@ -15,7 +15,7 @@ export async function searchImages(userInput, currentPage) {
   });
 
   try {
-    const response = await axios.get(`${API_URL}&${searchParams}`);
+    const response = await axios.get(`${API_URL}?${searchParams}`);
     console.log('search result from API:', response.data);
     return response.data;
   } catch (error) {
