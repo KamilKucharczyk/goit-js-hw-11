@@ -51,3 +51,30 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 23vw;
+}
+
+.img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
